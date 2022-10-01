@@ -1,0 +1,36 @@
+#ifndef __MOTOR__H__
+#define __MOTOR__H__
+#include<stdint.h>
+typedef int32_t PID_V;
+
+#define MOTOR_ON 1
+#define MOTOR_OFF 0
+#define MOTOR_FORWARD 2
+#define MOTOR_BACKWARD 3
+
+//extern VSTRUCT vl, vr;
+extern int motor_mode;
+
+//void PID_DeInit();
+//void PID_Init(PID_V val_l, PID_V val_r );
+//PID_V PID_readlize_l(PID_V val);
+//void PID_set_pwm_l(PID_V val);
+//PID_V PID_readlize_r(PID_V val);
+//void PID_set_pwm_r(PID_V val);
+//void PID_set_target_l(PID_V val);
+//void PID_set_target_r(PID_V val);
+
+void motor_init(PID_V val_l, PID_V val_r);
+void motor_power_off(void);
+
+void motor_turn_right(void);
+void motor_turn_left(void);
+void motor_turn_forward(void);
+void motor_turn_backward(void);
+void motor_turn_pause(void);
+void motor_turn_resume(void);
+
+void motor_set_speed(double v); //rmp
+
+
+#endif

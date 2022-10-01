@@ -1,0 +1,9 @@
+../Core/Src/run_main.c:53:5:Detection_Obstacle	96	static
+../Core/Src/run_main.c:93:6:Line_Follow	4	static
+../Core/Src/run_main.c:132:6:Manual_Control	4	static
+../Core/Src/run_main.c:179:6:Show_Oled	16	static
+../Core/Src/run_main.c:195:8:get_speed	48	static
+../Core/Src/run_main.c:225:5:run_main	8	static
+../Core/Src/run_main.c:274:6:uart_init	8	static
+../Core/Src/run_main.c:280:5:_read	32	static
+../Core/Src/run_main.c:300:5:_write	32	static
